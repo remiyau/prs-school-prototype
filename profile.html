@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Profile - SPB Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Government banner -->
+  <div class="gov-banner">
+    <span class="gov-banner-icon">&#128681;</span>
+    A Singapore Government Agency Website
+    <a href="#" class="gov-banner-link">How to identify <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4l2 2 2-2"/></svg></a>
+  </div>
+
+  <div class="shell">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand">
+          <div class="sidebar-brand-icon">PRS</div>
+          <strong>PRS</strong>
+        </div>
+        <button class="collapse-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="10" rx="1.5"/><line x1="6" y1="3" x2="6" y2="13"/></svg>
+          Collapse panel
+        </button>
+      </div>
+
+      <div class="sidebar-section-label">HPE</div>
+      <div class="board-pill">
+        <div class="board-pill-icon">S</div>
+        <span class="board-pill-name">SNB</span>
+        <span class="board-pill-chevron">&#8645;</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="#">
+          <span class="nav-item-text">My tasks</span>
+          <span class="nav-item-chevron">&#8250;</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-section-label">Modules</div>
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="#"><span class="nav-item-text">Registration</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Examination</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Supervision</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Renewal</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">CPE</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Professionals</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Healthcare institution</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item nav-item--parent" href="#">
+          <span class="nav-item-text">Schools</span>
+          <span class="nav-item-chevron">&#8963;</span>
+        </a>
+        <div class="nav-sub-items">
+          <a class="nav-sub-item nav-sub-item--active" href="index.html" id="nav-local">Local</a>
+          <a class="nav-sub-item" href="index.html?tab=foreign" id="nav-foreign">Foreign</a>
+        </div>
+        <a class="nav-item" href="#"><span class="nav-item-text">Finance</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Analytics</span><span class="nav-item-chevron">&#8250;</span></a>
+        <a class="nav-item" href="#"><span class="nav-item-text">Administration</span><span class="nav-item-chevron">&#8250;</span></a>
+      </nav>
+    </aside>
+
+    <!-- Workspace -->
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-right">
+          <span class="topbar-bell"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#55647c" stroke-width="1.5"><path d="M10 18c1.1 0 2-.9 2-2H8c0 1.1.9 2 2 2zM16 13V9c0-3.07-1.63-5.64-4.5-6.32V2c0-.83-.67-1.5-1.5-1.5S8.5 1.17 8.5 2v.68C5.64 3.36 4 5.92 4 9v4l-1 1v1h14v-1l-1-1z"/></svg></span>
+          <div class="topbar-avatar">AL <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4l2 2 2-2"/></svg></div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="index.html" id="breadcrumb-root">Local</a>
+          <span class="breadcrumb-sep">&#8250;</span>
+          <span class="breadcrumb-current" id="breadcrumb-name">Yong Loo Lin School of Medicine</span>
+        </nav>
+
+        <!-- Profile Header -->
+        <div class="profile-header">
+          <div class="profile-title">
+            <h1 id="profile-name">YONG LOO LIN SCHOOL OF MEDICINE</h1>
+            <span class="badge badge-active" id="profile-status">Active</span>
+          </div>
+          <button class="btn btn-danger" id="btn-deactivate">Deactivate school</button>
+        </div>
+
+        <!-- Profile Tabs -->
+        <div class="profile-tabs">
+          <button class="profile-tab profile-tab--active" data-tab="details">School details</button>
+          <button class="profile-tab" data-tab="workflow">Workflow history</button>
+        </div>
+
+        <!-- ===== SCHOOL DETAILS TAB ===== -->
+        <div class="tab-content tab-content--active" id="tab-details">
+
+          <!-- Particulars -->
+          <div class="section-block" style="margin-top:20px;">
+            <div class="section-heading">
+              <h3>Particulars</h3>
+              <a href="edit-particulars.html" class="btn-link" id="link-edit-particulars">&#9998; Edit particulars</a>
+            </div>
+            <div class="particulars-card" id="particulars-card">
+            </div>
+          </div>
+
+          <!-- Qualifications -->
+          <div class="section-block">
+            <div class="section-heading">
+              <h3>Qualifications</h3>
+              <a href="add-qualifications.html" class="btn-link" id="link-add-quals">+ Add qualifications</a>
+            </div>
+
+            <div class="toolbar" style="margin-bottom:12px;">
+              <button class="filter-chip">Type <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l3 3 3-3"/></svg></button>
+              <button class="filter-chip">Reg type <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l3 3 3-3"/></svg></button>
+              <button class="filter-chip">Register <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l3 3 3-3"/></svg></button>
+              <button class="filter-chip">Last updated <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="11" rx="1.5"/><line x1="2" y1="6" x2="14" y2="6"/><line x1="5" y1="1.5" x2="5" y2="4"/><line x1="11" y1="1.5" x2="11" y2="4"/></svg></button>
+            </div>
+
+            <div class="search-bar" style="margin-bottom:12px;">
+              <input type="text" class="search-input" placeholder="Search for qualification name" id="qual-search">
+              <button class="btn btn-primary" id="qual-search-btn">Search</button>
+            </div>
+
+            <table class="section-table">
+              <thead>
+                <tr>
+                  <th>Qualification name</th>
+                  <th>Type</th>
+                  <th>Reg type</th>
+                  <th>Register</th>
+                  <th>Duration</th>
+                  <th class="sortable" id="quals-col-updated">Last updated <span class="sort-icon">&#8597;</span></th>
+                </tr>
+              </thead>
+              <tbody id="qualifications-body">
+              </tbody>
+            </table>
+            <div class="table-footer">
+              <span class="table-footer-info" id="quals-info">Showing 10 out of 15 qualifications</span>
+              <nav class="pagination-nav" id="quals-pagination"></nav>
+            </div>
+          </div>
+
+          <!-- Name history -->
+          <div class="section-block">
+            <div class="section-heading"><h3>Name history</h3></div>
+            <table class="section-table">
+              <thead>
+                <tr><th>Updated date</th><th>Updated by</th><th>Employer name</th><th>Name status</th></tr>
+              </thead>
+              <tbody id="name-history-body"></tbody>
+            </table>
+          </div>
+
+          <!-- UEN history -->
+          <div class="section-block">
+            <div class="section-heading"><h3>UEN history</h3></div>
+            <table class="section-table">
+              <thead>
+                <tr><th>Updated date</th><th>Updated by</th><th>UEN</th><th>Entity name</th><th>Entity type</th><th>Remarks</th></tr>
+              </thead>
+              <tbody id="uen-history-body"></tbody>
+            </table>
+          </div>
+
+          <!-- Address history -->
+          <div class="section-block">
+            <div class="section-heading"><h3>Address history</h3></div>
+            <table class="section-table">
+              <thead>
+                <tr><th>Updated date</th><th>Issued by</th><th>Address type</th><th>Address</th><th>Address status</th></tr>
+              </thead>
+              <tbody id="address-history-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== WORKFLOW HISTORY TAB ===== -->
+        <div class="tab-content" id="tab-workflow">
+
+          <!-- Audit log -->
+          <div class="section-block" style="margin-top:20px;">
+            <div class="section-heading"><h3>Audit log</h3></div>
+            <table class="section-table">
+              <thead>
+                <tr><th>Action</th><th>Updated by</th><th class="sortable" id="audit-col-timestamp">Timestamp <span class="sort-icon">&#8597;</span></th><th>Field</th><th>Previous value</th><th>New value</th></tr>
+              </thead>
+              <tbody id="audit-log-body"></tbody>
+            </table>
+            <div class="table-footer">
+              <span class="table-footer-info" id="audit-info">Showing 10 out of 15 audit logs</span>
+              <nav class="pagination-nav" id="audit-pagination"></nav>
+            </div>
+          </div>
+
+          <!-- Workflow history timeline -->
+          <div class="section-block">
+            <div class="section-heading"><h3>Workflow history</h3></div>
+            <div class="timeline" id="workflow-timeline"></div>
+          </div>
+
+          <!-- Remarks -->
+          <div class="remarks-section">
+            <div class="remarks-empty">
+              <p>This employer has no remarks yet.</p>
+            </div>
+            <div class="remarks-form">
+              <h4>Add remarks</h4>
+              <textarea class="remarks-textarea" id="remarks-input" placeholder="Enter remarks..." maxlength="10000"></textarea>
+              <div class="remarks-footer">
+                <span class="char-count" id="char-count">0/10,000</span>
+                <button class="btn-add-remark" id="btn-add-remark">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Deactivate/Activate Dialog -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <h2 id="modal-title">Deactivate school</h2>
+      <p id="modal-body">You are about to deactivate this school. HCPs will no longer be able to select this school.</p>
+      <div class="modal-actions">
+        <button class="btn btn-outline" id="modal-cancel">Cancel</button>
+        <button class="btn btn-primary" id="modal-confirm">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
